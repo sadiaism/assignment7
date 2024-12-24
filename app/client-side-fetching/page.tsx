@@ -17,9 +17,9 @@ interface IProducts {
     }
 }
 
-const page = () => {
+const Page = () => {
 
-  const [data,setData] = useState<IProducts[]>([]);
+  const [Data,setData] = useState<IProducts[]>([]);
 
   useEffect(()=>{
     const fetchData= async ()=>{
@@ -34,7 +34,7 @@ const page = () => {
   return (
     <div><h1 className="flex justify-center items-center text-[32px] font-semibold">CLIENT SIDE FETCHING</h1>
     <div className="grid grid-cols-3 lg:gap-[50px] sm:grid-cols-1 ml-[50px] mr-[50px] mt-[50px] sm:gap-[40px]">
-      {data.map((products,index) =>(
+      {Data.map((products,index) =>(
         <div key={index} className="flex flex-col gap-5 border bg-[#F5F5F5] rounded-3xl pl-[10px]">
           <Image className="pl-[50px] pt-[50px]" src={products.image} alt={products.title}width={250}height={200}/>
           
@@ -52,4 +52,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page
