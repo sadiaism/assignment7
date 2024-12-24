@@ -16,7 +16,7 @@ const page = async () => {
 
 return (
     <div><h1 className='flex justify-center items-center text-[32px] font-semibold'>SERVER SIDE FETCHING</h1>
-    <div className='lg:grid grid-cols-2 justify-center items-center lg:gap-[50px] ml-[50px] mr-[50px] mt-[50px] sm:grid-cols-1 sm:gap-[24px]'>
+    <div className='lg:grid grid-cols-2 justify-center items-center lg:gap-[50px] sm:gap-[12px] ml-[50px] mr-[50px] mt-[50px] sm:grid-cols-1 '>
         {parsedResponse.map((books,index) =>
     
     <div key={index} className='flex flex-col gap-[30px] border bg-[#F5F5F5] rounded-2xl '>
